@@ -89,7 +89,7 @@ resource "azurerm_virtual_machine_extension" "linux-vme" {
   type                 = var.vme["type"]
   type_handler_version = var.vme["type_handler_version"]
 
-  depends_on = [null_resource.linux_provisioner]
+  
 
   tags                = local.common_tags
 }
