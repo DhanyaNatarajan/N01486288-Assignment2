@@ -1,6 +1,0 @@
----
-# vars file for users
-group1: cloudadmins
-group2: wheel
-user1: user1000
-user2: user2000
