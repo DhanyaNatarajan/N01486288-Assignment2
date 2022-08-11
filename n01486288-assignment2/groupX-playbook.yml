@@ -1,8 +1,0 @@
----
-- name: Assignment 2 - Playbook 
-  hosts: linux
-  roles:
-   - webserver
-   - system_profile
-   - users
-   - datadisk
