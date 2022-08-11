@@ -1,0 +1,5 @@
+fileinfo:
+  - path: ../files/vm1.html
+    host: n01486288-c-vm1.australiasoutheast.cloudapp.azure.com
+  - path: ../files/vm2.html
+    host: n01486288-c-vm2.australiasoutheast.cloudapp.azure.com

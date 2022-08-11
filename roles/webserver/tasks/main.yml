@@ -1,0 +1,21 @@
+---
+# tasks file for webserver
+- name: Install apache server
+  yum:
+    name: httpd 
+    state: latest
+
+- name: Copy files to remote host
+  copy:
+    src: "{{ item.path }}"
+    dest: /var/www/html/index.html
+    group: cloudadmins
+    mode: 0444
+  loop: "{{ fileinfo }}"
+  when: inventory_hostname == item.host
+  notify: restart_httpd
+
+- name: Start apache webserver
+  service:
+    name: httpd
+    enabled: yes

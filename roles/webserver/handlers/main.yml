@@ -1,0 +1,6 @@
+---
+# handlers file for webserver
+- name: restart_httpd
+  systemd:
+    name: httpd
+    state: started
